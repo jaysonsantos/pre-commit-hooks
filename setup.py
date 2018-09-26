@@ -20,10 +20,11 @@ setup(
         "Programming Language :: Python :: Implementation :: PyPy",
     ],
     packages=find_packages(include=("jaysonsantos_pre_commit_hooks/*",)),
-    install_requires=["poetry"],
+    install_requires=["poetry", "pipenv", "virtualenv"],
     entry_points={
         "console_scripts": [
-            "poetry-lock = jaysonsantos_pre_commit_hooks.poetry_lock:main"
+            "poetry-lock = jaysonsantos_pre_commit_hooks.poetry_lock:main",
+            "pipenv-lock = jaysonsantos_pre_commit_hooks.pipenv_lock:main",
         ]
     },
 )
