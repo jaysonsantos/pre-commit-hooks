@@ -6,3 +6,12 @@
     verbose: True
     files: pyproject.*
     minimum_pre_commit_version: 0.15.0
+
+-   id: pipenv-lock-file
+    name: pipenv locked
+    description: "Check if pipenv is locked and updated"
+    entry: pipenv-lock
+    language: python
+    verbose: True
+    files: Pipfile.*?
+    minimum_pre_commit_version: 0.15.0
