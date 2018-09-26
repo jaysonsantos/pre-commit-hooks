@@ -19,7 +19,7 @@ setup(
         "Programming Language :: Python :: Implementation :: CPython",
         "Programming Language :: Python :: Implementation :: PyPy",
     ],
-    packages=find_packages(include=("jaysonsantos_pre_commit_hooks/*",)),
+    packages=find_packages(),
     install_requires=["poetry", "pipenv", "virtualenv"],
     entry_points={
         "console_scripts": [
