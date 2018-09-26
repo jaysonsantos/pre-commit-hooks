@@ -1,0 +1,11 @@
+-   id: poetry-lock-file
+    name: poetry locked
+    description: "Check if poetry is locked and updated"
+    entry: python -c "from poetry.poetry import Poetry;
+      assert Poetry.create('.').locker.is_fresh(), 'Poetry is not locked'"
+    language: python_venv
+    additional_dependencies:
+      - poetry
+    verbose: True
+    files: pyproject.*
+    minimum_pre_commit_version: 0.15.0
